@@ -5,12 +5,11 @@ import subprocess
 n = len(sys.argv)
 
 # Argument Sanitation
-if n > 3: print("Please provide positive integer n to generate IsEvenProgram and integer to test evenness")
+if n > 2: print("Please provide positive integer n to generate IsEvenProgram")
 if int(sys.argv[1]) < 0: 
     print("Please provide positive integer n to generate IsEvenProgram")
     exit
 inverseN = -1 * int(sys.argv[1])
-check = sys.argv[2]
 
 # Generate Cmake File
 cmake = open("CMakeLists.txt", "w")
